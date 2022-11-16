@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <title>Explorer - Projeto 05</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-icons-png.flaticon.com/512/2115/2115955.png"
+    />
+  </head>
+  <body>
+    <div class="box"></div>
+    <header>
+      <h1>Mentoria</h1>
+      <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+    </header>
+
+    <form id="mentoria">
+      <fieldset>
+        <div class="fieldset-style">
+          <legend>Informações Pessoais</legend>
+
+          <div class="name">
+            <div class="input-style">
+              <label for="your-name">Nome</label>
+              <input type="text" id="your-name" required />
+            </div>
+
+            <div class="input-style">
+              <label for="your-nickname">Sobrenome</label>
+              <input type="text" id="your-nickname" required />
+            </div>
+          </div>
+
+          <div class="input-style">
+            <label for="your-email"
+              >Email <span>(digite um email válido)</span></label
+            >
+            <input type="email" id="your-email" required />
+          </div>
+
+          <div class="input-style">
+            <label for="your-password"
+              >Senha <span>(minimo de 6 caracteres)</span></label
+            >
+            <input type="text" id="your-password" required />
+          </div>
+        </div>
+
+        <div class="fieldset-style">
+          <legend>Informações do mentor</legend>
+
+          <div class="input-style">
+            <label for="mentor-name"
+              >Nome do seu mentor <span>(só o primeiro nome)</span></label
+            >
+            <input type="text" id="mentor-name" required />
+          </div>
+        </div>
+
+        <div class="fieldset-style">
+          <legend>Seus horários disponíveis</legend>
+
+          <div class="colunn-style">
+            <legend>primeira mentoria</legend>
+            <div class="date-colunn">
+              <div class="input-style">
+                <label for="first-date">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" id="first-date" required />
+              </div>
+
+              <div class="input-style">
+                <label for="first-begin">Das</label>
+                <input type="time" id="first-begin" required />
+              </div>
+
+              <div class="input-style">
+                <label for="first-end">Até</label>
+                <input type="time" id="first-end" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="colunn-style">
+            <legend>segunda mentoria</legend>
+            <div class="date-colunn">
+              <div class="input-style">
+                <label for="second-date">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" id="second-date" />
+              </div>
+
+              <div class="input-style">
+                <label for="second-begin">Das</label>
+                <input type="time" id="second-begin" />
+              </div>
+
+              <div class="input-style">
+                <label for="second-end">Até</label>
+                <input type="time" id="second-end" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <footer>
+      <input form="mentoria" type="submit" id="submit-button" value="Salvar" />
+    </footer>
+  </body>
+</html>
